@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113CD98B2AF93ACB009C24CC /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD98A2AF93ACB009C24CC /* Inspection.swift */; };
+		113CD98D2AF93AD7009C24CC /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD98C2AF93AD7009C24CC /* DataBase.swift */; };
 		116A22752AF9340300439668 /* CrimeFilesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A22742AF9340300439668 /* CrimeFilesAppApp.swift */; };
 		116A22772AF9340300439668 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A22762AF9340300439668 /* ContentView.swift */; };
 		116A22792AF9340400439668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A22782AF9340400439668 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113CD98A2AF93ACB009C24CC /* Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
+		113CD98C2AF93AD7009C24CC /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		116A22712AF9340300439668 /* CrimeFilesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeFilesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116A22742AF9340300439668 /* CrimeFilesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeFilesAppApp.swift; sourceTree = "<group>"; };
 		116A22762AF9340300439668 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113CD98E2AF93B0B009C24CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				113CD98A2AF93ACB009C24CC /* Inspection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		113CD98F2AF93B1B009C24CC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				113CD98C2AF93AD7009C24CC /* DataBase.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		116A22682AF9340300439668 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +73,8 @@
 			children = (
 				116A22742AF9340300439668 /* CrimeFilesAppApp.swift */,
 				116A22762AF9340300439668 /* ContentView.swift */,
+				113CD98E2AF93B0B009C24CC /* Models */,
+				113CD98F2AF93B1B009C24CC /* Services */,
 				116A22782AF9340400439668 /* Assets.xcassets */,
 				116A227A2AF9340400439668 /* Preview Content */,
 			);
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				116A22772AF9340300439668 /* ContentView.swift in Sources */,
+				113CD98B2AF93ACB009C24CC /* Inspection.swift in Sources */,
+				113CD98D2AF93AD7009C24CC /* DataBase.swift in Sources */,
 				116A22752AF9340300439668 /* CrimeFilesAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
