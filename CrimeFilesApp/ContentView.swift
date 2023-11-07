@@ -8,14 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var viewModel = InspectionViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            NavigationStack {
+                ZStack{
+                    
+//                    MainBackGroundView()
+//                        .ignoresSafeArea()
+
+                    List(viewModel.inspections, id: \.title) { inspectionDetailViewModel in
+                        NavigationLink {
+                            InspectionListView(
+                                inspectionList: inspectionDetailViewModel.rows,
+                                title: inspectionDetailViewModel.title,
+                                imageTitle: inspectionDetailViewModel.titleImage
+                            )
+                            
+                        } label: {
+                            CellView(
+                                title: inspectionDetailViewModel.title,
+                                imageName: inspectionDetailViewModel.imageName
+                            )
+                        }
+                        .listRowBackground(Color.clear)
+                        .listRowSeparator(.hidden)
+                    }
+                    .padding(.top, 100)
+                    .listStyle(.plain)
+                    
+                }
+//                .customNavigation/BarBackButtonHidden(false)
+            }
+            .tint(.black)
+            
         }
-        .padding()
     }
 }
 
