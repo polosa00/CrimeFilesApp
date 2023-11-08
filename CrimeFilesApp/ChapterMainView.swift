@@ -8,28 +8,51 @@
 import SwiftUI
 
 struct ChapterMainView: View {
-
+    
+    @Environment(\.dismiss) var dismiss
+    
     let title: String
     let sections = ["Section1", "Section2", "Section3", "Section4", "Section5", "Section6", "Section7"]
     let imageTitle = "mockImage"
     
     var body: some View {
-        VStack {
-            ScrollView {
-                LazyVStack {
-                    ForEach(sections, id: \.self) { section in
-                        NavigationLink {
-                            SectionView(title: section)
-                        } label: {
-                            CellView(title: section, imageName: imageTitle)
+        ZStack {
+            Color("Main")
+                .ignoresSafeArea()
+            VStack {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(sections, id: \.self) { section in
+                            NavigationLink {
+                                SectionView(title: section)
+                                    .navigationBarBackButtonHidden(true)
+                            } label: {
+                                CellView(title: section, imageName: imageTitle)
+                            }
+                            .padding(.horizontal, 16)
                         }
-                        .padding(.vertical, 8)
-                        .padding(.horizontal, 20)
+                    }
+                    .navigationTitle(title)
+                }
+            }
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading) {
+                    HStack{
+                        Image(systemName: "chevron.left")
+                            .imageScale(.large)
+                            .onTapGesture {
+                                dismiss()
+                            }
+                        Image("detective1")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 72, height: 91)
+                            
                     }
                 }
-                .navigationTitle(title)
-            }
         }
+        }
+
     }
 }
 

@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @State private var textTitle = ""
+    @State private var searchText = ""
     
     let chapters = ["Chapter1", "Chapter2", "Chapter3"]
     let imageTitle = "mockImage"
@@ -17,37 +18,45 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                Color("Main")
+                    .ignoresSafeArea()
                 ScrollView {
-                    VStack {
-                        Spacer()
-                        TextField(text: $textTitle) {
-                            HStack {
-                                Image(systemName: "magnifyingglass")
-                                Text("Search...")
-                            }
-                        }
-                        .padding()
-                        .background(Color.gray.opacity(0.2))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 20)
-                        .padding(.bottom, 10)
+                    VStack(spacing: 16) {
+//                        Spacer()
+//                        TextField(text: $textTitle) {
+//                            HStack {
+//                                Image(systemName: "magnifyingglass")
+//                                Text("Search...")
+//                            }
+//                        }
+//                        .padding()
+//                        .background(Color.white.opacity(0.8))
+//                        .cornerRadius(10)
+//                        .padding(.horizontal, 20)
+//                        .padding(.bottom, 10)
                             
                         ForEach(chapters, id: \.self) { title in
                             NavigationLink {
                                 ChapterMainView(title: title)
+                                    .navigationBarBackButtonHidden(true)
                             } label: {
                                 CellView(title: title, imageName: imageTitle)
                             }
-                            .padding(.vertical, 6)
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 16)
                         }
+                        Spacer()
                         Spacer()
                         Image("detective")
                             .resizable()
                             .frame(width: 105, height: 114)
                         Spacer()
                     }
-                    .navigationTitle("CrimeFiles")
+                    .searchable(text: $searchText, prompt: "Search...")
+                    
+                    .navigationTitle("Справочник")
+                    .navigationBarTitleDisplayMode(.inline)
+                    
+                    
                 }
             }
         }

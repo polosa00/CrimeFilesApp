@@ -15,46 +15,40 @@ struct CellView: View {
     
     var body: some View {
         ZStack{
-            HStack(){
-                Spacer()
-                Spacer()
-                Image(imageName)
-                    .resizable()
-                    .frame(width: 45, height: 45)
-                Spacer()
-                Spacer()
+            HStack(spacing: 10){
+                ZStack{
+                   Rectangle()
+                        .frame(width: 60, height: 60)
+                        .cornerRadius(10)
+                        .foregroundColor(.white.opacity(0.5))
+                        
+                    Image(imageName)
+                        .resizable()
+                        .frame(width: 45, height: 45)
+                    
+                }
+                .padding(.leading, 10)
+
                 Text(title)
-                    .multilineTextAlignment(.center) // ровняет все элементы в строках
+                    .multilineTextAlignment(.leading)
                     .lineSpacing(0)
                     .font(.custom("AlegreyaSC-Medium", size: fontSizeForRow))
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                 Spacer()
             }
             .frame(maxWidth: .infinity)
             .frame(height: 100)
             .background{
-                Color.white.opacity(0.2)
-                LinearGradient(
-                    gradient: Gradient(
-                        colors: [
-                            Color(red: 241 / 255, green: 231 / 255, blue: 196 / 255, opacity: 0.6),
-                            Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.5),
-                            Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.6)
-                        ]
-                    ),
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
+                Color("Cell")
+              
             }
             .cornerRadius(10)
-            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 5, y: 15)
-//            .padding(0)
         }
         
     }
 }
 
 #Preview {
-    CellView(title: "Title", imageName: "Подготовка к осмотру места происшествия_3")
+    CellView(title: "Подготовка к осмотру места происшествия", imageName: "Подготовка к осмотру места происшествия_3")
 }

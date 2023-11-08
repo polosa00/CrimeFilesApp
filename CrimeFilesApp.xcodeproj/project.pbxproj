@@ -20,6 +20,8 @@
 		116A22772AF9340300439668 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A22762AF9340300439668 /* MainView.swift */; };
 		116A22792AF9340400439668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A22782AF9340400439668 /* Assets.xcassets */; };
 		116A227C2AF9340400439668 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A227B2AF9340400439668 /* Preview Assets.xcassets */; };
+		93C1A2EE2AFC328C00C1EE4C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */; };
+		93C1A2F02AFC391200C1EE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2EF2AFC391200C1EE4C /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		116A22762AF9340300439668 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		116A22782AF9340400439668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116A227B2AF9340400439668 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		93C1A2EF2AFC391200C1EE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				116A22742AF9340300439668 /* CrimeFilesAppApp.swift */,
+				93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */,
+				93C1A2EF2AFC391200C1EE4C /* GradientView.swift */,
 				116A22762AF9340300439668 /* MainView.swift */,
 				113CD9A32AFBCEB1009C24CC /* ChapterMainView.swift */,
 				113CD99F2AFBCE0D009C24CC /* SectionView.swift */,
-				113CD9902AF94079009C24CC /* ContentView.swift */,
 				113CD99D2AFBCDE1009C24CC /* SubSectionView.swift */,
+				113CD9902AF94079009C24CC /* ContentView.swift */,
 				113CD9A12AFBCE25009C24CC /* FavoriteView.swift */,
 				113CD9942AFA4439009C24CC /* CellView.swift */,
 				113CD9982AFA4506009C24CC /* ViewModels */,
@@ -198,7 +204,9 @@
 				116A22752AF9340300439668 /* CrimeFilesAppApp.swift in Sources */,
 				113CD9912AF94079009C24CC /* ContentView.swift in Sources */,
 				113CD9A22AFBCE25009C24CC /* FavoriteView.swift in Sources */,
+				93C1A2F02AFC391200C1EE4C /* GradientView.swift in Sources */,
 				113CD9952AFA4439009C24CC /* CellView.swift in Sources */,
+				93C1A2EE2AFC328C00C1EE4C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
