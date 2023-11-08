@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var textTitle = ""
+    
     let chapters = ["Chapter1", "Chapter2", "Chapter3"]
     let imageTitle = "mockImage"
     
@@ -15,15 +18,25 @@ struct MainView: View {
         NavigationView {
             ZStack {
                 ScrollView {
-                    VStack {
+                    VStack(spacing: 20) {
                         Spacer()
+                        TextField(text: $textTitle) {
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                Text("Search...")
+                            }
+                        }
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 20)
+                            
                         ForEach(chapters, id: \.self) { title in
                             NavigationLink {
                                 ChapterMainView(title: title)
                             } label: {
                                 CellView(title: title, imageName: imageTitle)
                             }
-                            .padding(.vertical, 8)
                             .padding(.horizontal, 20)
                         }
                         Spacer()
@@ -34,7 +47,6 @@ struct MainView: View {
                     }
                     .navigationTitle("CrimeFiles")
                 }
-                
             }
         }
     }

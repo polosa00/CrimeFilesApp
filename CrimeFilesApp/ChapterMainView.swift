@@ -28,8 +28,6 @@ struct ChapterMainView: View {
                     }
                 }
                 .navigationTitle(title)
-          
-                
             }
         }
     }
