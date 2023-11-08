@@ -7,21 +7,21 @@
 
 import SwiftUI
 
-struct Inspection {
+struct Chapter {
     let title: String
     let imageName: String
     let titleImage: String
-    let rows: [RowInspection]
+    let section: [Section]
 }
 
-struct RowInspection {
+struct Section {
     let title: String
     let imageName: String
-    let rowsDetails: [RowDetailInspection]?
+    let subSection: [SubSection]?
     let data: String
 }
 
-struct RowDetailInspection {
+struct SubSection {
     let title: String
     let imageName: String
     let data: String
