@@ -9,10 +9,9 @@ import Foundation
 
 final class InspectionViewModel: ObservableObject {
     
-    @Published var inspections: [Inspection]
+    @Published var inspections: [Chapter]
     
     init() {
         inspections = DataBase().inspections
     }
-
 }

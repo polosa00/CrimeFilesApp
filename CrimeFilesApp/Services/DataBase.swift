@@ -12,27 +12,27 @@ struct DataBase {
 //    let preparednessToAction = DataStore.shared.preparednessToAction
     
     let inspections = [
-        Inspection(
+        Chapter(
             title: "Подготовка к осмотру места происшествия",
             imageName: "PreparingForInspect",
             titleImage: "detective",
-            rows: [
-                RowInspection(
+            section: [
+                Section(
                     title: "Общие положения осмотра места происшествия",
                     imageName: "GeneralProvisionsForInspecting",
-                    rowsDetails: [
-                        RowDetailInspection(title: "This is test details Row 1 long long long", imageName: "testImage", data: "Fill in in the future!"),
-                        RowDetailInspection(title: "This is test details Row 2", imageName: "testImage", data: "Fill in in the future!"),
-                        RowDetailInspection(title: "This is test details Row 3", imageName: "testImage", data: "Fill in in the future!"),
-                        RowDetailInspection(title: "This is test details Row 4", imageName: "testImage", data: "Fill in in the future!")
+                    subSection: [
+                        SubSection(title: "This is test details Row 1 long long long", imageName: "testImage", data: "Fill in in the future!"),
+                        SubSection(title: "This is test details Row 2", imageName: "testImage", data: "Fill in in the future!"),
+                        SubSection(title: "This is test details Row 3", imageName: "testImage", data: "Fill in in the future!"),
+                        SubSection(title: "This is test details Row 4", imageName: "testImage", data: "Fill in in the future!")
                     ],
                     data: "Fill in in the future!"
                 
                 ),
-                RowInspection(
+                Section(
                     title: "Обеспечение готовности к выезду на место происшествия",
                     imageName: "EnsuringReadinessForDeparture",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
 1.    Проверить готовность «сумки следователя», в том числе средств фото- и видеофиксации, форменного обмундирования, индивидуальных средств защиты и т.д.
 2.    Получить от оперативного дежурного органа внутренних дел точные, полные сведения о характере происшествия, обстановке места, где будет производиться осмотр:
@@ -48,10 +48,10 @@ struct DataBase {
 
 """
                 ),
-                RowInspection(
+                Section(
                     title: "Действия следователя при получении сообщения о преступлении",
                     imageName: "InvestigatorsActions",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
 Следователь, заступивший на дежурство и находящийся в административном здании органа внутренних дел, обязан незамедлительно выбыть в составе СОГ на место происшествия после соответствующего указания оперативного дежурного.
 До выбытия на место происшествия получить от оперативного дежурного подробную информацию об обстоятельствах совершенного преступления:
@@ -84,10 +84,10 @@ struct DataBase {
 """
                     
                 ),
-                RowInspection(
+                Section(
                     title: "Действия по прибытии на место происшествия",
                     imageName: "ActionsUponArrival",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
                     Действия по прибытии на место происшествия
 •    оказать помощь потерпевшим, если она не была оказана;
@@ -104,10 +104,10 @@ struct DataBase {
 """
                         
                 ),
-                RowInspection(
+                Section(
                     title: "Обязательные участники осмотра места происшествия",
                     imageName: "MandatoryParticipants",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
 Обязательные участники осмотра
 1.    Следователь (лицо, проводящее дознание)
@@ -127,10 +127,10 @@ struct DataBase {
 Примечание: Согласие представительства или учреждения испрашивается через Министерство иностранных дел Республики Беларусь
 """
                 ),
-                RowInspection(
+                Section(
                     title: "Дополнительные участники осмотра места происшествия",
                     imageName: "AdditionalParticipants",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
 Дополнительные участники осмотра
 1.    Представитель органа дознания (Министерство внутренних дел, Государственный пограничный комитет, Комитет государственного контроля, Вооруженных Сил и т.д. - оперативный сотрудник, участковый инспектор милиции)
@@ -154,36 +154,36 @@ struct DataBase {
 """
                     
                 ),
-                RowInspection(
+                Section(
                     title: "Определение границ осмотра места происшествия",
                     imageName: "DefinitionOfBoundaries",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 )
             ]
         ),
-        Inspection(
+        Chapter(
             title: "Осмотры по обьектам",
             imageName: "InspectionsByObjects",
             titleImage: "detective2",
-            rows: [
-                RowInspection(
+            section: [
+                Section(
                     title: "Осмотр жилища",
                     imageName: "HomeInspection",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                     
                 ),
-                RowInspection(
+                Section(
                     title: "Осмотр участка местности",
                     imageName: "AreaInspection",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 ),
-                RowInspection(
+                Section(
                     title: "Осмотр трупа",
                     imageName: "CorpseInspection",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
                     Осмотр трупа проводится в соответствии с ч. 1 ст. 205 УПК Республики Беларусь в тесном взаимодействии с государственным медицинским судебным экспертом (врачом-специалистом в области судебной медицины), привлеченным к осмотру места происшествия. До начала осмотра труп должен быть сфотографирован с соблюдением соответствующих правил фотосъемки.
                     При осмотре трупа в протоколе осмотра места происшествия обязательно указываются:
@@ -213,10 +213,10 @@ struct DataBase {
 """
                     
                 ),
-                RowInspection(
+                Section(
                     title: "Осмотр транспортного средства",
                     imageName: "VehicleInspection",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
 В ходе осмотра транспортного средства (ТС) необходимо зафиксировать
 
@@ -243,10 +243,10 @@ struct DataBase {
 
 """
                 ),
-                RowInspection(
+                Section(
                     title: "Осмотр и изъятие следов крови",
                     imageName: "BloodTracesExamination",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
 Виды следов крови, которые могут быть обнаружены на месте происше-ствия:
 - капли крови – образуются в результате свободного падения при вытека-нии из раны на предметы; позволяют восстановить направление движения кро-воточившего тела, скорость его движения, высоту падения капель. Форма и раз-меры капли следа крови зависят от механизма его образования;
@@ -346,10 +346,10 @@ struct DataBase {
 
 """
                 ),
-                RowInspection(
+                Section(
                     title: "Работа с запаховыми следами",
                     imageName: "WorkingWithSmell",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: """
 Источники запаха - все материальные объекты живой и неживой природы, находящиеся в твердом, жидком и газообразном со¬стоянии.
 Человеческий запах слагается из «набора»:
@@ -396,59 +396,59 @@ struct DataBase {
 
 """
                 ),
-                RowInspection(
+                Section(
                     title: "Работа со следами рук, ног",
                     imageName: "WorkingWithHandAndFeetMarks",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 ),
-                RowInspection(
+                Section(
                     title: "Работа с орудиями преступления",
                     imageName: "WorkingWithCrimeInstruments",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 )
             ]
         ),
-        Inspection(
+        Chapter(
             title: "Отдельные следственные действия при осмотре",
             imageName: "SeperateActionsDuringInspections",
             titleImage: "detective3",
-            rows: [
-                RowInspection(
+            section: [
+                Section(
                     title: "Описание, измерения, привязки обьектов и следов",
                     imageName: "DescriptionMeasurementsObjectsAndTraces",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 ),
-                RowInspection(
+                Section(
                     title: "Изъятие и упаковка объектов и следов",
                     imageName: "RemovalAndPackagingObjectsAndTraces",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 ),
-                RowInspection(
+                Section(
                     title: "Составление планов и схем",
                     imageName: "PreparationOfPlansAndDiagrams",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 ),
-                RowInspection(
+                Section(
                     title: "Фотосъемка",
                     imageName: "Photography",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 ),
-                RowInspection(
+                Section(
                     title: "Структура протокола осмотра места происшествия",
                     imageName: "ProtocolStructure",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future!"
                 ),
-                RowInspection(
+                Section(
                     title: "Камеры видеонаблюдения",
                     imageName: "CCTVCameras",
-                    rowsDetails: nil,
+                    subSection: nil,
                     data: "Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future! Fill in in the future!"
                 )
             ]
