@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		113CD98B2AF93ACB009C24CC /* Inspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD98A2AF93ACB009C24CC /* Inspection.swift */; };
 		113CD98D2AF93AD7009C24CC /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD98C2AF93AD7009C24CC /* DataBase.swift */; };
-		113CD9912AF94079009C24CC /* InformationFiew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD9902AF94079009C24CC /* InformationFiew.swift */; };
-		113CD9932AFA43E3009C24CC /* InformationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD9922AFA43E3009C24CC /* InformationRowView.swift */; };
+		113CD9912AF94079009C24CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD9902AF94079009C24CC /* ContentView.swift */; };
 		113CD9952AFA4439009C24CC /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD9942AFA4439009C24CC /* CellView.swift */; };
 		113CD9972AFA44FA009C24CC /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD9962AFA44FA009C24CC /* InspectionViewModel.swift */; };
-		113CD99C2AFA4758009C24CC /* InspectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD99B2AFA4758009C24CC /* InspectionListView.swift */; };
+		113CD99E2AFBCDE1009C24CC /* SubSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD99D2AFBCDE1009C24CC /* SubSectionView.swift */; };
+		113CD9A02AFBCE0D009C24CC /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD99F2AFBCE0D009C24CC /* SectionView.swift */; };
+		113CD9A22AFBCE25009C24CC /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD9A12AFBCE25009C24CC /* FavoriteView.swift */; };
+		113CD9A42AFBCEB1009C24CC /* ChapterMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113CD9A32AFBCEB1009C24CC /* ChapterMainView.swift */; };
 		116A22752AF9340300439668 /* CrimeFilesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A22742AF9340300439668 /* CrimeFilesAppApp.swift */; };
-		116A22772AF9340300439668 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A22762AF9340300439668 /* ContentView.swift */; };
+		116A22772AF9340300439668 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A22762AF9340300439668 /* MainView.swift */; };
 		116A22792AF9340400439668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A22782AF9340400439668 /* Assets.xcassets */; };
 		116A227C2AF9340400439668 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A227B2AF9340400439668 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -23,14 +25,16 @@
 /* Begin PBXFileReference section */
 		113CD98A2AF93ACB009C24CC /* Inspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspection.swift; sourceTree = "<group>"; };
 		113CD98C2AF93AD7009C24CC /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
-		113CD9902AF94079009C24CC /* InformationFiew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationFiew.swift; sourceTree = "<group>"; };
-		113CD9922AFA43E3009C24CC /* InformationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationRowView.swift; sourceTree = "<group>"; };
+		113CD9902AF94079009C24CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		113CD9942AFA4439009C24CC /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		113CD9962AFA44FA009C24CC /* InspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
-		113CD99B2AFA4758009C24CC /* InspectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionListView.swift; sourceTree = "<group>"; };
+		113CD99D2AFBCDE1009C24CC /* SubSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSectionView.swift; sourceTree = "<group>"; };
+		113CD99F2AFBCE0D009C24CC /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		113CD9A12AFBCE25009C24CC /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		113CD9A32AFBCEB1009C24CC /* ChapterMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterMainView.swift; sourceTree = "<group>"; };
 		116A22712AF9340300439668 /* CrimeFilesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeFilesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116A22742AF9340300439668 /* CrimeFilesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeFilesAppApp.swift; sourceTree = "<group>"; };
-		116A22762AF9340300439668 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		116A22762AF9340300439668 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		116A22782AF9340400439668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116A227B2AF9340400439668 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,10 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				116A22742AF9340300439668 /* CrimeFilesAppApp.swift */,
-				116A22762AF9340300439668 /* ContentView.swift */,
-				113CD9902AF94079009C24CC /* InformationFiew.swift */,
-				113CD99B2AFA4758009C24CC /* InspectionListView.swift */,
-				113CD9922AFA43E3009C24CC /* InformationRowView.swift */,
+				116A22762AF9340300439668 /* MainView.swift */,
+				113CD9A32AFBCEB1009C24CC /* ChapterMainView.swift */,
+				113CD99F2AFBCE0D009C24CC /* SectionView.swift */,
+				113CD99D2AFBCDE1009C24CC /* SubSectionView.swift */,
+				113CD9A12AFBCE25009C24CC /* FavoriteView.swift */,
+				113CD9902AF94079009C24CC /* ContentView.swift */,
 				113CD9942AFA4439009C24CC /* CellView.swift */,
 				113CD9982AFA4506009C24CC /* ViewModels */,
 				113CD98E2AF93B0B009C24CC /* Models */,
@@ -182,14 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113CD9932AFA43E3009C24CC /* InformationRowView.swift in Sources */,
-				116A22772AF9340300439668 /* ContentView.swift in Sources */,
+				113CD9A42AFBCEB1009C24CC /* ChapterMainView.swift in Sources */,
+				116A22772AF9340300439668 /* MainView.swift in Sources */,
+				113CD99E2AFBCDE1009C24CC /* SubSectionView.swift in Sources */,
+				113CD9A02AFBCE0D009C24CC /* SectionView.swift in Sources */,
 				113CD98B2AF93ACB009C24CC /* Inspection.swift in Sources */,
 				113CD98D2AF93AD7009C24CC /* DataBase.swift in Sources */,
 				113CD9972AFA44FA009C24CC /* InspectionViewModel.swift in Sources */,
 				116A22752AF9340300439668 /* CrimeFilesAppApp.swift in Sources */,
-				113CD99C2AFA4758009C24CC /* InspectionListView.swift in Sources */,
-				113CD9912AF94079009C24CC /* InformationFiew.swift in Sources */,
+				113CD9912AF94079009C24CC /* ContentView.swift in Sources */,
+				113CD9A22AFBCE25009C24CC /* FavoriteView.swift in Sources */,
 				113CD9952AFA4439009C24CC /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
