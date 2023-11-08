@@ -18,7 +18,7 @@ struct MainView: View {
         NavigationView {
             ZStack {
                 ScrollView {
-                    VStack(spacing: 20) {
+                    VStack {
                         Spacer()
                         TextField(text: $textTitle) {
                             HStack {
@@ -30,6 +30,7 @@ struct MainView: View {
                         .background(Color.gray.opacity(0.2))
                         .cornerRadius(10)
                         .padding(.horizontal, 20)
+                        .padding(.bottom, 10)
                             
                         ForEach(chapters, id: \.self) { title in
                             NavigationLink {
@@ -37,6 +38,7 @@ struct MainView: View {
                             } label: {
                                 CellView(title: title, imageName: imageTitle)
                             }
+                            .padding(.vertical, 6)
                             .padding(.horizontal, 20)
                         }
                         Spacer()
