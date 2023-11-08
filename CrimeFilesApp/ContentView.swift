@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     let title: String
     let mainText: String
     
@@ -20,6 +22,16 @@ struct ContentView: View {
             }
             .navigationTitle(title)
         }
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading) {
+                Image(systemName: "chevron.left")
+                    .imageScale(.large)
+                    .onTapGesture {
+                        dismiss()
+                    }
+            }
+        }
+
     }
 }
 
