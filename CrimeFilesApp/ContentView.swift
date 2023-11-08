@@ -14,7 +14,11 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("ContentView")
+            VStack {
+                Text(mainText)
+                Spacer()
+            }
+            .navigationTitle(title)
         }
     }
 }
