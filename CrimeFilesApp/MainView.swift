@@ -20,6 +20,7 @@ struct MainView: View {
             ZStack {
                 Color("Main")
                     .ignoresSafeArea()
+                GradientView()
                 ScrollView {
                     VStack(spacing: 16) {
 //                        Spacer()

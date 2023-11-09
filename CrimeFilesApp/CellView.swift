@@ -35,14 +35,16 @@ struct CellView: View {
                     .font(.custom("AlegreyaSC-Medium", size: fontSizeForRow))
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
+            
                 Spacer()
             }
             .frame(maxWidth: .infinity)
             .frame(height: 100)
             .background{
-                Color("Cell")
+//                Color("Cell")
               
             }
+            .background(.thinMaterial)
             .cornerRadius(10)
         }
         
