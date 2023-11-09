@@ -16,7 +16,7 @@ struct MainView: View {
     let imageTitle = "mockImage"
     
     var body: some View {
-        NavigationView {
+        CustomNavView {
             ZStack {
                 Color("Main")
                     .ignoresSafeArea()
@@ -37,10 +37,14 @@ struct MainView: View {
 //                        .padding(.bottom, 10)
                             
                         ForEach(chapters, id: \.self) { title in
-                            NavigationLink {
-                                ChapterMainView(title: title)
-                                    .navigationBarBackButtonHidden(true)
-                            } label: {
+                            CustomNavLink (
+                                destination:
+                                    ChapterMainView(title: title)
+                                    .customNavigationTitle("Custom \(title)")
+                                    .customNavigationImageTitle("mockImage")
+                                    .customNavigationSubTitle("Потом уберем - это тестовое")
+                            )
+                         {
                                 CellView(title: title, imageName: imageTitle)
                             }
                             .padding(.horizontal, 16)
@@ -53,9 +57,10 @@ struct MainView: View {
                         Spacer()
                     }
                     .searchable(text: $searchText, prompt: "Search...")
-                    
+                    .customNavigationBarBackButtonHidden(true)
                     .navigationTitle("Справочник")
                     .navigationBarTitleDisplayMode(.inline)
+                    
                     
                     
                 }
