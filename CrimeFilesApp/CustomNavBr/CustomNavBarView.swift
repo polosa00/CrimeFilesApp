@@ -20,13 +20,13 @@ struct CustomNavBarView: View {
         HStack {
             
             if showBackButton {
-                
                 backButton
             }
             
             Spacer()
             
             titleSection
+            Spacer()
             Spacer()
             Spacer()
             backButton
@@ -44,7 +44,7 @@ struct CustomNavBarView: View {
 
 #Preview {
     VStack {
-        CustomNavBarView(showBackButton: true, title: "Titile", imageTitle: "Subtutle", subtitle: "")
+        CustomNavBarView(showBackButton: true, title: "Titile dsfsdf dsf", imageTitle: "mockImage", subtitle: "")
         Spacer()
     }
     
