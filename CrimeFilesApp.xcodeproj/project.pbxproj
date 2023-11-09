@@ -20,6 +20,12 @@
 		116A22772AF9340300439668 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A22762AF9340300439668 /* MainView.swift */; };
 		116A22792AF9340400439668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A22782AF9340400439668 /* Assets.xcassets */; };
 		116A227C2AF9340400439668 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116A227B2AF9340400439668 /* Preview Assets.xcassets */; };
+		1170F2782AFD6B7900A43D87 /* AppNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F2772AFD6B7900A43D87 /* AppNavBarView.swift */; };
+		1170F27A2AFD6C9A00A43D87 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F2792AFD6C9A00A43D87 /* CustomNavBarView.swift */; };
+		1170F27C2AFD719600A43D87 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */; };
+		1170F27E2AFD7EB000A43D87 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */; };
+		1170F2802AFD81AA00A43D87 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */; };
+		1170F2822AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F2812AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift */; };
 		93C1A2EE2AFC328C00C1EE4C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */; };
 		93C1A2F02AFC391200C1EE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2EF2AFC391200C1EE4C /* GradientView.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +45,12 @@
 		116A22762AF9340300439668 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		116A22782AF9340400439668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116A227B2AF9340400439668 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1170F2772AFD6B7900A43D87 /* AppNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBarView.swift; sourceTree = "<group>"; };
+		1170F2792AFD6C9A00A43D87 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
+		1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
+		1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		1170F2812AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomNavBarPreferenceKeys.swift; path = ../../../../Downloads/CustomNavBarPreferenceKeys.swift; sourceTree = "<group>"; };
 		93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		93C1A2EF2AFC391200C1EE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +119,7 @@
 				113CD9902AF94079009C24CC /* ContentView.swift */,
 				113CD9A12AFBCE25009C24CC /* FavoriteView.swift */,
 				113CD9942AFA4439009C24CC /* CellView.swift */,
+				1170F2762AFD6B4700A43D87 /* CustomNavBr */,
 				113CD9982AFA4506009C24CC /* ViewModels */,
 				113CD98E2AF93B0B009C24CC /* Models */,
 				113CD98F2AF93B1B009C24CC /* Services */,
@@ -122,6 +135,19 @@
 				116A227B2AF9340400439668 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1170F2762AFD6B4700A43D87 /* CustomNavBr */ = {
+			isa = PBXGroup;
+			children = (
+				1170F2772AFD6B7900A43D87 /* AppNavBarView.swift */,
+				1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */,
+				1170F2792AFD6C9A00A43D87 /* CustomNavBarView.swift */,
+				1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */,
+				1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */,
+				1170F2812AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift */,
+			);
+			path = CustomNavBr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,17 +220,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1170F2822AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift in Sources */,
 				113CD9A42AFBCEB1009C24CC /* ChapterMainView.swift in Sources */,
 				116A22772AF9340300439668 /* MainView.swift in Sources */,
+				1170F2782AFD6B7900A43D87 /* AppNavBarView.swift in Sources */,
 				113CD99E2AFBCDE1009C24CC /* SubSectionView.swift in Sources */,
 				113CD9A02AFBCE0D009C24CC /* SectionView.swift in Sources */,
 				113CD98B2AF93ACB009C24CC /* Chapter.swift in Sources */,
+				1170F27E2AFD7EB000A43D87 /* CustomNavView.swift in Sources */,
 				113CD98D2AF93AD7009C24CC /* DataBase.swift in Sources */,
 				113CD9972AFA44FA009C24CC /* InspectionViewModel.swift in Sources */,
 				116A22752AF9340300439668 /* CrimeFilesAppApp.swift in Sources */,
+				1170F2802AFD81AA00A43D87 /* CustomNavLink.swift in Sources */,
+				1170F27A2AFD6C9A00A43D87 /* CustomNavBarView.swift in Sources */,
 				113CD9912AF94079009C24CC /* ContentView.swift in Sources */,
 				113CD9A22AFBCE25009C24CC /* FavoriteView.swift in Sources */,
 				93C1A2F02AFC391200C1EE4C /* GradientView.swift in Sources */,
+				1170F27C2AFD719600A43D87 /* CustomNavBarContainerView.swift in Sources */,
 				113CD9952AFA4439009C24CC /* CellView.swift in Sources */,
 				93C1A2EE2AFC328C00C1EE4C /* MainTabView.swift in Sources */,
 			);

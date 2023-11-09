@@ -21,12 +21,14 @@ struct SectionView: View {
             VStack {
                 ScrollView {
                     ForEach(sections, id: \.self) { section in
-                        NavigationLink {
-                            ContentView(title: section, mainText: section)
-                                .navigationBarBackButtonHidden(true)
-                        } label: {
+                        CustomNavLink (
+                            destination:
+                                ContentView(title: section, mainText: section)
+                                .customNavigationTitle("Custom \(section)")
+                        )
+                        {  // Start custom Label here
                             CellView(title: section, imageName: imageTitle)
-                        }
+                        } // End Custom label here
                         .padding(.horizontal, 16)
 
                     }

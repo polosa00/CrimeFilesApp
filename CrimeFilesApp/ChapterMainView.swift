@@ -23,10 +23,11 @@ struct ChapterMainView: View {
                 ScrollView {
                     LazyVStack {
                         ForEach(sections, id: \.self) { section in
-                            NavigationLink {
-                                SectionView(title: section)
-                                    .navigationBarBackButtonHidden(true)
-                            } label: {
+                            CustomNavLink (
+                                destination:
+                                    SectionView(title: section)
+                                    .customNavigationTitle("Custom \(section)")
+                            )  {
                                 CellView(title: section, imageName: imageTitle)
                             }
                             .padding(.horizontal, 16)
