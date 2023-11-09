@@ -11,7 +11,7 @@ import SwiftUI
 struct CrimeFilesAppApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainTabView()
         }
     }
 }
