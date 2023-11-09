@@ -41,10 +41,10 @@ struct CellView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 100)
             .background{
-//                Color("Cell")
+                Color("Cell")
               
             }
-            .background(.thinMaterial)
+            .background(.ultraThinMaterial)
             .cornerRadius(10)
         }
         
