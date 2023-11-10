@@ -24,17 +24,16 @@ struct MainView: View {
                 ScrollView {
                     VStack(spacing: 16) {
 //                        Spacer()
-//                        TextField(text: $textTitle) {
-//                            HStack {
-//                                Image(systemName: "magnifyingglass")
-//                                Text("Search...")
-//                            }
-//                        }
-//                        .padding()
-//                        .background(Color.white.opacity(0.8))
-//                        .cornerRadius(10)
-//                        .padding(.horizontal, 20)
-//                        .padding(.bottom, 10)
+                        TextField(text: $textTitle) {
+                            HStack {
+                                Text("Поиск...")
+                            } // будем кастомный код
+                        }
+                        .padding()
+                        .background(Color.white.opacity(0.8))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 10)
                             
                         ForEach(chapters, id: \.self) { title in
                             CustomNavLink (
