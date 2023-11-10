@@ -144,8 +144,8 @@
 				1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */,
 				1170F2792AFD6C9A00A43D87 /* CustomNavBarView.swift */,
 				1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */,
-				1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */,
 				1170F2812AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift */,
+				1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */,
 			);
 			path = CustomNavBr;
 			sourceTree = "<group>";
