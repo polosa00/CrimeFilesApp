@@ -26,7 +26,7 @@ struct CustomNavBarContainerView<Content: View>: View {
             content
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .onPreferenceChange(CustomNavBarTitlePreferenceKeys.self) { value in
+        .onPreferenceChange(CustomNavBarTitlePrefKeys.self) { value in
             self.title = value
         }
         .onPreferenceChange(CustomNavBarSubTitlePreferenceKeys.self) { value in
