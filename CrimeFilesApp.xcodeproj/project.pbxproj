@@ -25,7 +25,7 @@
 		1170F27C2AFD719600A43D87 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */; };
 		1170F27E2AFD7EB000A43D87 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */; };
 		1170F2802AFD81AA00A43D87 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */; };
-		1170F2822AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F2812AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift */; };
+		1170F2822AFD8B6E00A43D87 /* CustomNavBarPrefKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F2812AFD8B6E00A43D87 /* CustomNavBarPrefKeys.swift */; };
 		93C1A2EE2AFC328C00C1EE4C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */; };
 		93C1A2F02AFC391200C1EE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2EF2AFC391200C1EE4C /* GradientView.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +50,7 @@
 		1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
 		1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
 		1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
-		1170F2812AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomNavBarPreferenceKeys.swift; path = ../../../../Downloads/CustomNavBarPreferenceKeys.swift; sourceTree = "<group>"; };
+		1170F2812AFD8B6E00A43D87 /* CustomNavBarPrefKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomNavBarPrefKeys.swift; path = ../../../../Downloads/CustomNavBarPrefKeys.swift; sourceTree = "<group>"; };
 		93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		93C1A2EF2AFC391200C1EE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +144,7 @@
 				1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */,
 				1170F2792AFD6C9A00A43D87 /* CustomNavBarView.swift */,
 				1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */,
-				1170F2812AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift */,
+				1170F2812AFD8B6E00A43D87 /* CustomNavBarPrefKeys.swift */,
 				1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */,
 			);
 			path = CustomNavBr;
@@ -220,7 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1170F2822AFD8B6E00A43D87 /* CustomNavBarPreferenceKeys.swift in Sources */,
+				1170F2822AFD8B6E00A43D87 /* CustomNavBarPrefKeys.swift in Sources */,
 				113CD9A42AFBCEB1009C24CC /* ChapterMainView.swift in Sources */,
 				116A22772AF9340300439668 /* MainView.swift in Sources */,
 				1170F2782AFD6B7900A43D87 /* AppNavBarView.swift in Sources */,
