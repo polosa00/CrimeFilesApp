@@ -31,7 +31,7 @@ struct GradientView: View { //Получается херня. Совсем не
                 .clipShape(Rectangle())
                 .frame(width: 350, height: 350)
                 .cornerRadius(50)
-                .position(x: 450, y: 140)
+//                .position(x: 450, y: 140)
                 .rotationEffect(Angle(degrees: -55), anchor: .center)
         }
 }
