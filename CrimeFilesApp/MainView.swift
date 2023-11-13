@@ -21,6 +21,7 @@ struct MainView: View {
                 Color("Main")
                     .ignoresSafeArea()
                 GradientView()
+                    .position(x: 130, y: -40)
                 ScrollView {
                     VStack(spacing: 16) {
 //                        Spacer()

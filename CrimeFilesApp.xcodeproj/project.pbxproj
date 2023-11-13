@@ -33,6 +33,9 @@
 		93D5FB7A2AFE708700020ED6 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5FB792AFE708700020ED6 /* TabBarItem.swift */; };
 		93D5FB7C2AFE714400020ED6 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5FB7B2AFE714400020ED6 /* CustomTabBarContainerView.swift */; };
 		93D5FB7E2AFE718600020ED6 /* TabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5FB7D2AFE718600020ED6 /* TabBarItemsPreferenceKey.swift */; };
+		93D5FB812B023AD000020ED6 /* AlegreyaSC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D5FB802B023AD000020ED6 /* AlegreyaSC-Bold.ttf */; };
+		93D5FB832B023ADA00020ED6 /* AlegreyaSC-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D5FB822B023ADA00020ED6 /* AlegreyaSC-Medium.ttf */; };
+		93D5FB852B023AE400020ED6 /* AlegreyaSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93D5FB842B023AE400020ED6 /* AlegreyaSC-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,10 @@
 		93D5FB792AFE708700020ED6 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		93D5FB7B2AFE714400020ED6 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		93D5FB7D2AFE718600020ED6 /* TabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		93D5FB802B023AD000020ED6 /* AlegreyaSC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSC-Bold.ttf"; sourceTree = "<group>"; };
+		93D5FB822B023ADA00020ED6 /* AlegreyaSC-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSC-Medium.ttf"; sourceTree = "<group>"; };
+		93D5FB842B023AE400020ED6 /* AlegreyaSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlegreyaSC-Regular.ttf"; sourceTree = "<group>"; };
+		93D5FB862B023B5100020ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +126,8 @@
 		116A22732AF9340300439668 /* CrimeFilesApp */ = {
 			isa = PBXGroup;
 			children = (
+				93D5FB862B023B5100020ED6 /* Info.plist */,
+				93D5FB7F2B023AB800020ED6 /* Fonts */,
 				116A22742AF9340300439668 /* CrimeFilesAppApp.swift */,
 				93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */,
 				93C1A2EF2AFC391200C1EE4C /* GradientView.swift */,
@@ -171,6 +180,16 @@
 				93D5FB792AFE708700020ED6 /* TabBarItem.swift */,
 			);
 			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		93D5FB7F2B023AB800020ED6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93D5FB802B023AD000020ED6 /* AlegreyaSC-Bold.ttf */,
+				93D5FB842B023AE400020ED6 /* AlegreyaSC-Regular.ttf */,
+				93D5FB822B023ADA00020ED6 /* AlegreyaSC-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +252,9 @@
 			files = (
 				116A227C2AF9340400439668 /* Preview Assets.xcassets in Resources */,
 				116A22792AF9340400439668 /* Assets.xcassets in Resources */,
+				93D5FB812B023AD000020ED6 /* AlegreyaSC-Bold.ttf in Resources */,
+				93D5FB832B023ADA00020ED6 /* AlegreyaSC-Medium.ttf in Resources */,
+				93D5FB852B023AE400020ED6 /* AlegreyaSC-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +425,7 @@
 				DEVELOPMENT_TEAM = JXRD2AKBWK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrimeFilesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -435,6 +458,7 @@
 				DEVELOPMENT_TEAM = JXRD2AKBWK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrimeFilesApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
