@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    @State private var selection = "home"
+    @State private var tabSelection: TabBarItem = .home
+    
     var body: some View {
-        TabView{
+        
+        
+        CustomTabBarContainerView(selection: $tabSelection) {
             MainView()
-                .tabItem {
-                    Image(systemName: "house")
-                }
-            Text("favorit")
-                .tabItem {
-                    Image(systemName: "star")
-                }
-            Text("info")
-                .tabItem {
-                    Image(systemName: "info.circle")
-                }
+                .tabBarItem(tab: .home, selection: $tabSelection)
+            FavoriteView()
+                .tabBarItem(tab: .favorites, selection: $tabSelection)
+            SettingsView()
+                .tabBarItem(tab: .settings, selection: $tabSelection)
+            
         }
-        .accentColor(.yellow)
+        
+        
+        
+        
+       
     }
 }
 

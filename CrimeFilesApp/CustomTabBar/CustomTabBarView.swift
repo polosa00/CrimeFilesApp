@@ -10,37 +10,34 @@ import SwiftUI
 struct CustomTabBarView: View {
     
     let tabs: [TabBarItem]
- 
-    @Binding  var selection: TabBarItem
+    @Binding var selection: TabBarItem
     @Namespace private var namespace
     @State var localSelection: TabBarItem
     
     var body: some View {
- 
-        tabBar
-            .onChange(of: selection) { newValue in
+        tabBarVersionTwo
+            .onChange(of: selection, perform: { value in
                 withAnimation(.easeInOut) {
-                    localSelection = newValue
+                    localSelection = value
                 }
-            }
+            })
+            
     }
 }
 
-// MARK: -  PREVIEW
 struct CustomTabBarView_Previews: PreviewProvider {
     
-    static let tabs: [TabBarItem] = [
-        .home, .favorites, .settings
-    ]
+    static let tabs: [TabBarItem] = [.favorites, .home, .settings]
+    
     static var previews: some View {
         VStack {
             Spacer()
-            CustomTabBarView(tabs: tabs, selection: .constant(tabs.first!), localSelection: tabs.first!)
+            CustomTabBarView (tabs: tabs, selection: .constant(tabs.first!), localSelection: tabs.first!)
         }
     }
 }
 
-// MARK: -  EXTENSTION
+
 extension CustomTabBarView {
     private func tabView(tab: TabBarItem) -> some View {
         VStack {
@@ -48,28 +45,78 @@ extension CustomTabBarView {
                 .font(.subheadline)
             Text(tab.title)
                 .font(.system(size: 10, weight: .semibold, design: .rounded))
-        } //: VSTACK
-        .foregroundColor(localSelection == tab ? .yellow : .gray)
+        }
+        .foregroundColor(localSelection == tab ? tab.color: Color.gray)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
-        .background(localSelection == tab ? .gray.opacity(0.2) : Color.clear)
+        .background(localSelection == tab ? tab.color.opacity(0.2) : Color.clear)
         .cornerRadius(10)
     }
     
-    private var tabBar: some View {
+    private var tabBarVersionOne: some View {
         HStack {
             ForEach(tabs, id: \.self) { tab in
                 tabView(tab: tab)
                     .onTapGesture {
-                        switchToTab(tab: tab)
+                        switchToTab(tab)
                     }
             }
-        } //: HSTACK
+        }
         .padding(6)
-        .background(Color.white.ignoresSafeArea(edges: .bottom))
+        .background(
+            Color.white.ignoresSafeArea(edges: .bottom)
+        )
     }
     
-    private func switchToTab(tab: TabBarItem) {
-            localSelection = tab
+    private func switchToTab(_ tab: TabBarItem) {
+        selection = tab
+        
     }
 }
+
+
+extension CustomTabBarView {
+    private func tabViewTwo(tab: TabBarItem) -> some View {
+        VStack {
+            Image(systemName: tab.iconName)
+                .font(.subheadline)
+            Text(tab.title)
+                .font(.system(size: 10, weight: .semibold, design: .rounded))
+        }
+        .foregroundColor(localSelection == tab ? tab.color: Color.gray)
+        .padding(.vertical, 8)
+        .frame(maxWidth: .infinity)
+        .background(
+            ZStack {
+                if localSelection == tab {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(tab.color.opacity(0.2))
+                        .matchedGeometryEffect(id: "background_rectangle", in: namespace)
+                }
+            }
+            
+        )
+    }
+    
+    private var tabBarVersionTwo: some View {
+        HStack {
+            ForEach(tabs, id: \.self) { tab in
+                tabViewTwo(tab: tab)
+                    .onTapGesture {
+                        switchToTab(tab)
+                    }
+            }
+        }
+        .padding(6)
+        .background(
+            Color.white.ignoresSafeArea(edges: .bottom)
+        )
+        .cornerRadius(10)
+        .shadow(color: Color.black.opacity(0.3), radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 5)
+        .padding(.horizontal)
+    }
+    
+}
+
+
+

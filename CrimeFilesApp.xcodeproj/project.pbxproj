@@ -25,6 +25,7 @@
 		1170F27C2AFD719600A43D87 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */; };
 		1170F27E2AFD7EB000A43D87 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */; };
 		1170F2802AFD81AA00A43D87 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */; };
+		1170F2A82B0414BE00A43D87 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1170F2A72B0414BE00A43D87 /* SettingsView.swift */; };
 		93C1A2EE2AFC328C00C1EE4C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */; };
 		93C1A2F02AFC391200C1EE4C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1A2EF2AFC391200C1EE4C /* GradientView.swift */; };
 		93D5FB732AFE68D100020ED6 /* CustomNavBarPrefKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D5FB722AFE68D100020ED6 /* CustomNavBarPrefKeys.swift */; };
@@ -58,6 +59,7 @@
 		1170F27B2AFD719600A43D87 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
 		1170F27D2AFD7EB000A43D87 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
 		1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		1170F2A72B0414BE00A43D87 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		93C1A2EF2AFC391200C1EE4C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		93D5FB722AFE68D100020ED6 /* CustomNavBarPrefKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPrefKeys.swift; sourceTree = "<group>"; };
@@ -132,11 +134,12 @@
 				93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */,
 				93C1A2EF2AFC391200C1EE4C /* GradientView.swift */,
 				116A22762AF9340300439668 /* MainView.swift */,
+				113CD9A12AFBCE25009C24CC /* FavoriteView.swift */,
+				1170F2A72B0414BE00A43D87 /* SettingsView.swift */,
 				113CD9A32AFBCEB1009C24CC /* ChapterMainView.swift */,
 				113CD99F2AFBCE0D009C24CC /* SectionView.swift */,
 				113CD99D2AFBCDE1009C24CC /* SubSectionView.swift */,
 				113CD9902AF94079009C24CC /* ContentView.swift */,
-				113CD9A12AFBCE25009C24CC /* FavoriteView.swift */,
 				113CD9942AFA4439009C24CC /* CellView.swift */,
 				93D5FB742AFE6DD300020ED6 /* CustomTabBar */,
 				1170F2762AFD6B4700A43D87 /* CustomNavBr */,
@@ -280,6 +283,7 @@
 				113CD9972AFA44FA009C24CC /* InspectionViewModel.swift in Sources */,
 				116A22752AF9340300439668 /* CrimeFilesAppApp.swift in Sources */,
 				93D5FB7C2AFE714400020ED6 /* CustomTabBarContainerView.swift in Sources */,
+				1170F2A82B0414BE00A43D87 /* SettingsView.swift in Sources */,
 				93D5FB7E2AFE718600020ED6 /* TabBarItemsPreferenceKey.swift in Sources */,
 				1170F2802AFD81AA00A43D87 /* CustomNavLink.swift in Sources */,
 				1170F27A2AFD6C9A00A43D87 /* CustomNavBarView.swift in Sources */,
