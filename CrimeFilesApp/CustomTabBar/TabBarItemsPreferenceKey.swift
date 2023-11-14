@@ -7,17 +7,15 @@
 
 import SwiftUI
 
-// MARK: -  Create PreferenceKey
 struct TabBarItemsPreferenceKey: PreferenceKey {
-    
+
     static var defaultValue: [TabBarItem] = []
-    
     static func reduce(value: inout [TabBarItem], nextValue: () -> [TabBarItem]) {
         value += nextValue()
     }
+    
 }
 
-// MARK: -  ViewModifier
 struct TabBarItemViewModifier: ViewModifier {
     
     let tab: TabBarItem
@@ -28,9 +26,9 @@ struct TabBarItemViewModifier: ViewModifier {
             .opacity(selection == tab ? 1.0 : 0.0)
             .preference(key: TabBarItemsPreferenceKey.self, value: [tab])
     }
+    
 }
 
-// MARK: -  Extenstion
 extension View {
     func tabBarItem(tab: TabBarItem, selection: Binding<TabBarItem>) -> some View {
         self

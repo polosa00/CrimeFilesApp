@@ -16,7 +16,6 @@ enum TabBarItem: Hashable {
         case .home: return "house"
         case .favorites: return "heart"
         case .settings: return "gear"
-       
         }
     }
     
@@ -27,14 +26,12 @@ enum TabBarItem: Hashable {
         case .settings: return "Настройки"
         }
     }
-
     
-    var view: any View {
+    var color: Color {
         switch self {
-        case .home: return MainView()
-        case .favorites: return FavoriteView()
-        case .settings: return ContentView(title: "hi", mainText: "hi")
+        case .home: return Color("Main")
+        case .favorites: return Color("Main")
+        case .settings: return Color("Main")
         }
     }
 }
-
