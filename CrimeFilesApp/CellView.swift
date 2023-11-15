@@ -39,7 +39,7 @@ struct CellView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            .frame(height: 100)
+            .frame(height: 90)
             .background{
                 Color("Cell")
               

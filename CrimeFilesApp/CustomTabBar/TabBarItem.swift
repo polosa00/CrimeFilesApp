@@ -13,9 +13,9 @@ enum TabBarItem: Hashable {
     
     var iconName: String {
         switch self {
-        case .home: return "house"
-        case .favorites: return "heart"
-        case .settings: return "gear"
+        case .home: return "house.fill"
+        case .favorites: return "heart.fill"
+        case .settings: return "info.circle.fill"
         }
     }
     
@@ -23,7 +23,7 @@ enum TabBarItem: Hashable {
         switch self {
         case .home: return "Главная"
         case .favorites: return "Избранное"
-        case .settings: return "Настройки"
+        case .settings: return "Инфо"
         }
     }
     

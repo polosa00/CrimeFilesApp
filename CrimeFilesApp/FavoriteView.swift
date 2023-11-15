@@ -10,7 +10,8 @@ import SwiftUI
 struct FavoriteView: View {
     var body: some View {
         ZStack {
-            Color.indigo.ignoresSafeArea()
+            Color("Main")
+                .ignoresSafeArea()
             VStack {
                 Text("Избранное здесь")
                     .foregroundColor(.white)

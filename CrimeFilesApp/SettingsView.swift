@@ -10,7 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         ZStack {
-            Color.indigo.ignoresSafeArea()
+            Color("Main")
+                .ignoresSafeArea()
             VStack {
                 Text("Настройки здейсь")
                     .foregroundColor(.white)

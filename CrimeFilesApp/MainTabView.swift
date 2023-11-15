@@ -24,11 +24,6 @@ struct MainTabView: View {
                 .tabBarItem(tab: .settings, selection: $tabSelection)
             
         }
-        
-        
-        
-        
-       
     }
 }
 
