@@ -19,39 +19,11 @@ struct AppTabBarView: View {
             FavoriteView()
                 .tabBarItem(tab: .favorites, selection: $tabSelection)
         }
-        
     }
 }
-
-
-
 
 #Preview {
     AppTabBarView()
 }
 
-
-extension AppTabBarView {
-    private var defaultTabBar: some View {
-        TabView(selection: $selection) {
-            Color.red
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-            
-            Color.blue
-                .tabItem {
-                    Image(systemName: "heart")
-                    Text("Favorite")
-                }
-            
-            Color.orange
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Profile")
-                }
-        }
-    }
-}
 

@@ -38,6 +38,5 @@ struct CustomTabBarContainerView_Previews: PreviewProvider {
         CustomTabBarContainerView(selection: .constant(tabs.first!)) {
             Color.red
         }
-        
     }
 }

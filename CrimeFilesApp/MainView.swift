@@ -12,7 +12,7 @@ struct MainView: View {
     @State private var textTitle = ""
     @State private var searchText = ""
     
-    let chapters = ["Chapter1", "Chapter2", "Chapter3"]
+    let chapters = ["Подготовка к осмотру места происшествия", "Осмотры по объектам", "Отдельные следственные действия при осмотре"]
     let imageTitle = "mockImage"
     
     var body: some View {
@@ -22,19 +22,19 @@ struct MainView: View {
                     .ignoresSafeArea()
                 GradientView()
                     .position(x: 130, y: -40)
+                
                 ScrollView {
                     VStack(spacing: 16) {
-//                        Spacer()
                         TextField(text: $textTitle) {
                             HStack {
                                 Text("Поиск...")
                             } // будем кастомный код
                         }
-                        .padding()
+                        .padding(8)
                         .background(Color.white.opacity(0.8))
                         .cornerRadius(10)
                         .padding(.horizontal, 20)
-                        .padding(.bottom, 10)
+                        .padding(.bottom, 4)
                             
                         ForEach(chapters, id: \.self) { title in
                             CustomNavLink (
@@ -49,11 +49,12 @@ struct MainView: View {
                             }
                             .padding(.horizontal, 16)
                         }
-                        Spacer()
+//                        Spacer()
                         Spacer()
                         Image("detective")
                             .resizable()
-                            .frame(width: 105, height: 114)
+                            .scaledToFill()
+                            .frame(width: 105, height: 110)
                         Spacer()
                     }
                     .searchable(text: $searchText, prompt: "Search...")
