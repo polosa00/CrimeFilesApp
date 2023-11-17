@@ -22,17 +22,13 @@ struct CustomNavBarView: View {
             if showBackButton {
                 backButton
             }
-            
             Spacer()
-            
             titleSection
-            Spacer()
-            Spacer()
             Spacer()
             if showFavoriteButton {
                 favoriteButton
             }
-            Spacer()
+          
         }
         .padding()
         .foregroundColor(.white)
@@ -58,6 +54,7 @@ extension CustomNavBarView {
             dismiss()
         } label: {
             Image(systemName: "chevron.left")
+           
         }
     }
     
@@ -65,7 +62,8 @@ extension CustomNavBarView {
         Button {
             // Code for adding favorite
         } label: {
-            Image(systemName: "star.circle.fill")
+            Image(systemName: "star.fill")
+                .font(.title2)
         }
     }
     
