@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var textTitle = ""
+    @State private var textTitle = "СПРАВОЧНИК"
     @State private var searchText = "Some Title"
     
     let chapters = ["Подготовка к осмотру места происшествия", "Осмотры по объектам", "Отдельные следственные действия при осмотре"]
@@ -20,8 +20,8 @@ struct MainView: View {
             ZStack {
                 Color("Main")
                     .ignoresSafeArea()
-                GradientView()
-                    .position(x: 130, y: -40)
+//                GradientView()
+//                    .position(x: 130, y: -40)
                 
                 ScrollView {
                     VStack(spacing: 16) {
@@ -57,8 +57,11 @@ struct MainView: View {
                         Spacer()
                     }
                 }
+                
             }
             .customNavigationTitle(textTitle)
+            .customNavigationBarBackButtonHidden(true)
+            .customNavigationFavoriteButtonHidden(true)
         }
     }
 }
