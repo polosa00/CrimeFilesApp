@@ -12,10 +12,10 @@ struct CustomNavBarView: View {
     @Environment(\.dismiss) var dismiss
     
     let showBackButton:Bool
+    let showFavoriteButton: Bool
     
     let title:String
     let imageTitle: String
-    let subtitle: String?
     var body: some View {
         HStack {
             
@@ -29,8 +29,10 @@ struct CustomNavBarView: View {
             Spacer()
             Spacer()
             Spacer()
-            backButton
-                .opacity(0)
+            if showFavoriteButton {
+                favoriteButton
+            }
+            Spacer()
         }
         .padding()
         .foregroundColor(.white)
@@ -44,7 +46,7 @@ struct CustomNavBarView: View {
 
 #Preview {
     VStack {
-        CustomNavBarView(showBackButton: true, title: "Titile dsfsdf dsf", imageTitle: "mockImage", subtitle: "")
+        CustomNavBarView(showBackButton: true, showFavoriteButton: true, title: "Titile dsfsdf dsf", imageTitle: "mockImage")
         Spacer()
     }
     
@@ -59,6 +61,14 @@ extension CustomNavBarView {
         }
     }
     
+    private var favoriteButton: some View {
+        Button {
+            // Code for adding favorite
+        } label: {
+            Image(systemName: "star.circle.fill")
+        }
+    }
+    
     private var titleSection: some View {
         HStack {
         
@@ -70,7 +80,6 @@ extension CustomNavBarView {
                 Text(title)
                     .font(.title)
                     .fontWeight(.semibold)
-                Text(subtitle ?? "")
             }
         }
     }

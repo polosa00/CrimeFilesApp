@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @State private var textTitle = ""
-    @State private var searchText = ""
+    @State private var searchText = "Some Title"
     
     let chapters = ["Подготовка к осмотру места происшествия", "Осмотры по объектам", "Отдельные следственные действия при осмотре"]
     let imageTitle = "mockImage"
@@ -28,6 +28,7 @@ struct MainView: View {
                         TextField(text: $textTitle) {
                             HStack {
                                 Text("Поиск...")
+                                    .foregroundStyle(.black)
                             } // будем кастомный код
                         }
                         .padding(8)
@@ -40,16 +41,14 @@ struct MainView: View {
                             CustomNavLink (
                                 destination:
                                     ChapterMainView(title: title)
-                                    .customNavigationTitle("Custom \(title)")
+                                    .customNavigationTitle(" \(title)")
                                     .customNavigationImageTitle("mockImage")
-                                    .customNavigationSubTitle("Потом уберем - это тестовое")
                             )
                          {
                                 CellView(title: title, imageName: imageTitle)
                             }
                             .padding(.horizontal, 16)
                         }
-//                        Spacer()
                         Spacer()
                         Image("detective")
                             .resizable()
@@ -57,15 +56,9 @@ struct MainView: View {
                             .frame(width: 105, height: 110)
                         Spacer()
                     }
-                    .searchable(text: $searchText, prompt: "Search...")
-                    .customNavigationBarBackButtonHidden(true)
-                    .navigationTitle("Справочник")
-                    .navigationBarTitleDisplayMode(.inline)
-                    
-                    
-                    
                 }
             }
+            .customNavigationTitle(textTitle)
         }
     }
 }
