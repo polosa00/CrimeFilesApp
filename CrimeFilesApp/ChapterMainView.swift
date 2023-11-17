@@ -26,32 +26,16 @@ struct ChapterMainView: View {
                             CustomNavLink (
                                 destination:
                                     SectionView(title: section)
-                                    .customNavigationTitle("Custom \(section)")
+                                    .customNavigationTitle(" \(section)")
                             )  {
                                 CellView(title: section, imageName: imageTitle)
                             }
                             .padding(.horizontal, 16)
                         }
                     }
-                    .navigationTitle(title)
                 }
             }
-            .toolbar{
-                ToolbarItem(placement: .navigationBarLeading) {
-                    HStack{
-                        Image(systemName: "chevron.left")
-                            .imageScale(.large)
-                            .onTapGesture {
-                                dismiss()
-                            }
-                        Image("detective1")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 72, height: 91)
-                            
-                    }
-                }
-        }
+            .customNavigationFavoriteButtonHidden(true)
         }
 
     }

@@ -11,10 +11,10 @@ struct CustomNavBarContainerView<Content: View>: View {
     let content: Content
     
     @State private var showBackButton = true
+    @State private var showFavoriteButton = true
     
     @State private var title = ""
     @State private var imageTitle = ""
-    @State private var subtitle: String? = nil
     
     init(@ViewBuilder content: () -> Content) {
         self.content = content()
@@ -22,15 +22,12 @@ struct CustomNavBarContainerView<Content: View>: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            CustomNavBarView(showBackButton: showBackButton, title: title, imageTitle: imageTitle, subtitle: subtitle)
+            CustomNavBarView(showBackButton: showBackButton, showFavoriteButton: showFavoriteButton, title: title, imageTitle: imageTitle)
             content
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .onPreferenceChange(CustomNavBarTitlePrefKeys.self) { value in
             self.title = value
-        }
-        .onPreferenceChange(CustomNavBarSubTitlePreferenceKeys.self) { value in
-            self.subtitle = value
         }
         .onPreferenceChange(CustomNavBarImageTitlePreferenceKeys.self) { value in
             self.imageTitle = value
@@ -38,6 +35,9 @@ struct CustomNavBarContainerView<Content: View>: View {
         .onPreferenceChange(CustomNavBarBackButtonHiddenPreferenceKeys.self) { value in
             self.showBackButton = !value
         }
+        .onPreferenceChange(CustomNavBarFavoriteButtonHiddenPreferenceKeys.self, perform: { value in
+            self.showFavoriteButton = !value
+        })
     }
 }
 
@@ -49,7 +49,6 @@ struct CustomNavBarContainerView<Content: View>: View {
             Text("hello")
                 .customNavigationTitle("NewTitle")
                 .customNavigationBarBackButtonHidden(true)
-                .customNavigationSubTitle("Subtitle")
                 .customNavigationImageTitle("BloodTracesExamination")
         }
     }

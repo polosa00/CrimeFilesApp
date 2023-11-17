@@ -33,17 +33,8 @@ struct SectionView: View {
 
                     }
                 }
-                .navigationTitle(title)
             }
-            .toolbar{
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Image(systemName: "chevron.left")
-                        .imageScale(.large)
-                        .onTapGesture {
-                            dismiss()
-                        }
-                }
-        }
+            .customNavigationFavoriteButtonHidden(true)
         }
 
     }
