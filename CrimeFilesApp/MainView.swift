@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @State private var textTitle = "СПРАВОЧНИК"
-    @State private var searchText = "Some Title"
+    @State private var searchText = "Поиск"
     
     let chapters = ["Подготовка к осмотру места происшествия", "Осмотры по объектам", "Отдельные следственные действия при осмотре"]
     let imageTitle = "mockImage"
@@ -25,7 +25,7 @@ struct MainView: View {
                 
                 ScrollView {
                     VStack(spacing: 16) {
-                        TextField(text: $textTitle) {
+                        TextField(text: $searchText) {
                             HStack {
                                 Text("Поиск...")
                                     .foregroundStyle(.black)
