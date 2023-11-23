@@ -132,15 +132,10 @@
 				93D5FB7F2B023AB800020ED6 /* Fonts */,
 				116A22742AF9340300439668 /* CrimeFilesAppApp.swift */,
 				93C1A2ED2AFC328C00C1EE4C /* MainTabView.swift */,
-				93C1A2EF2AFC391200C1EE4C /* GradientView.swift */,
-				116A22762AF9340300439668 /* MainView.swift */,
-				113CD9A12AFBCE25009C24CC /* FavoriteView.swift */,
-				1170F2A72B0414BE00A43D87 /* SettingsView.swift */,
-				113CD9A32AFBCEB1009C24CC /* ChapterMainView.swift */,
-				113CD99F2AFBCE0D009C24CC /* SectionView.swift */,
-				113CD99D2AFBCDE1009C24CC /* SubSectionView.swift */,
-				113CD9902AF94079009C24CC /* ContentView.swift */,
-				113CD9942AFA4439009C24CC /* CellView.swift */,
+				931D2CA52B079F0800861036 /* Components */,
+				931D2CA32B079ECE00861036 /* Main */,
+				931D2CA42B079EDA00861036 /* Favorite */,
+				931D2CA62B079F1600861036 /* Settings */,
 				93D5FB742AFE6DD300020ED6 /* CustomTabBar */,
 				1170F2762AFD6B4700A43D87 /* CustomNavBr */,
 				113CD9982AFA4506009C24CC /* ViewModels */,
@@ -171,6 +166,43 @@
 				1170F27F2AFD81AA00A43D87 /* CustomNavLink.swift */,
 			);
 			path = CustomNavBr;
+			sourceTree = "<group>";
+		};
+		931D2CA32B079ECE00861036 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				116A22762AF9340300439668 /* MainView.swift */,
+				113CD9A32AFBCEB1009C24CC /* ChapterMainView.swift */,
+				113CD99F2AFBCE0D009C24CC /* SectionView.swift */,
+				113CD99D2AFBCDE1009C24CC /* SubSectionView.swift */,
+				113CD9902AF94079009C24CC /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		931D2CA42B079EDA00861036 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				113CD9A12AFBCE25009C24CC /* FavoriteView.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		931D2CA52B079F0800861036 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				93C1A2EF2AFC391200C1EE4C /* GradientView.swift */,
+				113CD9942AFA4439009C24CC /* CellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		931D2CA62B079F1600861036 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1170F2A72B0414BE00A43D87 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		93D5FB742AFE6DD300020ED6 /* CustomTabBar */ = {
