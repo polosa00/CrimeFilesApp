@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SectionView: View {
+    
     @Environment(\.dismiss) var dismiss
     
     let title: String
